@@ -1,0 +1,16 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "name": "cool project 1",
+      "description": "cool desc",
+      "createdAt": "2026-08-13"
+    },
+    {
+      "id": "2",
+      "name": "cool project 2",
+      "description": "cool desc 2",
+      "createdAt": "2026-09-18"
+    }
+  ]
+}
