@@ -9,9 +9,9 @@ export default function ProjectPage() {
     queryFn: () => getProject(projectId!),
     enabled: !!projectId,
   });
-  if (!projectId) return <p>проект не выбран</p>;
+  if (!projectId) return <p>project is not selected</p>;
 
-  if (projectQuery.isLoading) return <p>Загрузка проекта</p>;
+  if (projectQuery.isLoading) return <p>loading project</p>;
   if (projectQuery.isError) {
     return <p>Ошибка: {(projectQuery.error as Error).message}</p>;
   }
