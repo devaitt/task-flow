@@ -2,15 +2,166 @@
   "projects": [
     {
       "id": "1",
-      "name": "cool project 1",
-      "description": "cool desc",
-      "createdAt": "2026-08-13"
+      "name": "Website Redesign",
+      "description": "Обновление дизайна корпоративного сайта",
+      "createdAt": "2026-09-18"
     },
     {
       "id": "2",
-      "name": "cool project 2",
-      "description": "cool desc 2",
-      "createdAt": "2026-09-18"
+      "name": "Mobile App",
+      "description": "Разработка мобильного приложения",
+      "createdAt": "2026-09-20"
+    },
+    {
+      "id": "3",
+      "name": "TaskFlow",
+      "description": "Система управления проектами и задачами",
+      "createdAt": "2026-09-25"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "1",
+      "projectId": "1",
+      "title": "Сделать Header",
+      "description": "Создать адаптивный header для сайта",
+      "status": "backlog",
+      "priority": "high",
+      "assignee": "Danik",
+      "createdAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "2",
+      "projectId": "1",
+      "title": "Сверстать главную страницу",
+      "description": "Создать основной layout главной страницы",
+      "status": "in-progress",
+      "priority": "high",
+      "assignee": "Alex",
+      "createdAt": "2026-09-19",
+      "updatedAt": "2026-09-21"
+    },
+    {
+      "id": "3",
+      "projectId": "1",
+      "title": "Добавить мобильную версию",
+      "description": "Адаптировать сайт под мобильные устройства",
+      "status": "review",
+      "priority": "medium",
+      "assignee": "Danik",
+      "createdAt": "2026-09-20",
+      "updatedAt": "2026-09-22"
+    },
+    {
+      "id": "4",
+      "projectId": "1",
+      "title": "Настроить SEO",
+      "description": "Добавить meta-теги и базовые SEO настройки",
+      "status": "done",
+      "priority": "low",
+      "assignee": "Alex",
+      "createdAt": "2026-09-18",
+      "updatedAt": "2026-09-23"
+    },
+    {
+      "id": "5",
+      "projectId": "2",
+      "title": "Создать экран авторизации",
+      "description": "Сделать форму входа и регистрации",
+      "status": "backlog",
+      "priority": "high",
+      "assignee": "Danik",
+      "createdAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
+    },
+    {
+      "id": "6",
+      "projectId": "2",
+      "title": "Экран профиля",
+      "description": "Создать страницу профиля пользователя",
+      "status": "in-progress",
+      "priority": "medium",
+      "assignee": "Alex",
+      "createdAt": "2026-09-21",
+      "updatedAt": "2026-09-24"
+    },
+    {
+      "id": "7",
+      "projectId": "2",
+      "title": "Настроить навигацию",
+      "description": "Добавить навигацию между основными экранами",
+      "status": "review",
+      "priority": "medium",
+      "assignee": "Danik",
+      "createdAt": "2026-09-22",
+      "updatedAt": "2026-09-25"
+    },
+    {
+      "id": "8",
+      "projectId": "2",
+      "title": "Подготовить splash screen",
+      "description": "Добавить стартовый экран приложения",
+      "status": "done",
+      "priority": "low",
+      "assignee": "Alex",
+      "createdAt": "2026-09-20",
+      "updatedAt": "2026-09-26"
+    },
+    {
+      "id": "9",
+      "projectId": "3",
+      "title": "Создать Kanban board",
+      "description": "Реализовать четыре колонки задач",
+      "status": "backlog",
+      "priority": "high",
+      "assignee": "Danik",
+      "createdAt": "2026-09-25",
+      "updatedAt": "2026-09-25"
+    },
+    {
+      "id": "10",
+      "projectId": "3",
+      "title": "Добавить фильтры",
+      "description": "Фильтрация задач по приоритету и исполнителю",
+      "status": "backlog",
+      "priority": "medium",
+      "assignee": "Alex",
+      "createdAt": "2026-09-26",
+      "updatedAt": "2026-09-26"
+    },
+    {
+      "id": "11",
+      "projectId": "3",
+      "title": "Настроить TanStack Query",
+      "description": "Подключить получение и изменение задач через API",
+      "status": "in-progress",
+      "priority": "high",
+      "assignee": "Danik",
+      "createdAt": "2026-09-25",
+      "updatedAt": "2026-09-27"
+    },
+    {
+      "id": "12",
+      "projectId": "3",
+      "title": "Сделать адаптивность",
+      "description": "Адаптировать Kanban под мобильные устройства",
+      "status": "review",
+      "priority": "medium",
+      "assignee": "Alex",
+      "createdAt": "2026-09-26",
+      "updatedAt": "2026-09-28"
+    },
+    {
+      "id": "13",
+      "projectId": "3",
+      "title": "Добавить страницу статистики",
+      "description": "Показать количество задач по статусам",
+      "status": "done",
+      "priority": "low",
+      "assignee": "Danik",
+      "createdAt": "2026-09-25",
+      "updatedAt": "2026-09-29"
     }
   ]
 }
