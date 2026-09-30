@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { getProject } from "../../API/projects";
 import { getTasksByProject } from "../../API/tasks";
+import TaskCard from "../components/task card/TaskCard";
 export default function ProjectPage() {
   const { projectId } = useParams();
 
@@ -34,12 +35,7 @@ export default function ProjectPage() {
       <p className="project__description">{projectQuery.data.description}</p>
       <ul className="tasks-list">
         {tasksQuery.data?.map((task) => {
-          return (
-            <li key={task.id}>
-              <p>{task.title}</p>
-              <p>{task.assignee}</p>
-            </li>
-          );
+          return <TaskCard task={task} key={task.id} />;
         })}
       </ul>
     </div>
