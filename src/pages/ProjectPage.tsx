@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { getProject } from "../../API/projects";
 import { getTasksByProject } from "../../API/tasks";
-import TaskCard from "../components/task card/TaskCard";
+import Kanban from "../components/kanban/Kanban";
 export default function ProjectPage() {
   const { projectId } = useParams();
 
@@ -33,11 +33,7 @@ export default function ProjectPage() {
     <div className="project__container">
       <h1 className="project__title">{projectQuery.data.name}</h1>
       <p className="project__description">{projectQuery.data.description}</p>
-      <ul className="tasks-list">
-        {tasksQuery.data?.map((task) => {
-          return <TaskCard task={task} key={task.id} />;
-        })}
-      </ul>
+      <Kanban tasks={tasksQuery.data} />
     </div>
   );
 }
