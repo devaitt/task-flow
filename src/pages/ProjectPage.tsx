@@ -3,6 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 import { getProject } from "../../API/projects";
 import { getTasksByProject } from "../../API/tasks";
 import Kanban from "../components/kanban/Kanban";
+
 export default function ProjectPage() {
   const { projectId } = useParams();
 

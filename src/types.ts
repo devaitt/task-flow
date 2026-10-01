@@ -5,12 +5,14 @@ export interface Project {
   createdAt: string;
 }
 
+export type TaskStatus = "backlog" | "in-progress" | "review" | "done";
+
 export interface Task {
   id: string;
   projectId: string;
   title: string;
   description: string;
-  status: "backlog" | "in-progress" | "review" | "done";
+  status: TaskStatus;
   priority: "low" | "medium" | "high" | null;
   assignee: string | null;
   createdAt: string;
