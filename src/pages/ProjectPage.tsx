@@ -32,9 +32,11 @@ export default function ProjectPage() {
 
   return (
     <div className="project__container">
-      <h1 className="project__title">{projectQuery.data.name}</h1>
-      <p className="project__description">{projectQuery.data.description}</p>
-      <Kanban tasks={tasksQuery.data} />
+      <div className="project__body">
+        <h1 className="project__title">{projectQuery.data.name}</h1>
+        <p className="project__description">{projectQuery.data.description}</p>
+        <Kanban tasks={tasksQuery.data} />
+      </div>
     </div>
   );
 }
