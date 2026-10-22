@@ -11,7 +11,9 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         <div className="card">
           <div className="card__name">{project.name}</div>
           <div className="card__description">{project.description}</div>
-          <div className="card__create-date">{project.createdAt}</div>
+          <div className="card__create-date">
+            {`Создан: ${project.createdAt}`}
+          </div>
         </div>
       </div>
     </Link>

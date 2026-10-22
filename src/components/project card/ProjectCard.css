@@ -1,8 +1,21 @@
 .card__container {
-  width: 100%;
+  min-width: 500px;
 }
 
 .card {
-  border: 1px solid black;
+  border: 1px solid #000;
+  border-radius: 5px;
   padding: 10px 20px;
+  font-family: "Vollkorn";
+}
+
+.card__name {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.card__description {
+  font-size: 18px;
+  color: #4a4a4a;
 }
