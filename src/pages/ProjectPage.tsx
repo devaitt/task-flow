@@ -3,6 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 import { getProject } from "../../API/projects";
 import { getTasksByProject } from "../../API/tasks";
 import Kanban from "../components/kanban/Kanban";
+import styles from "./ProjectPage.module.css";
 
 export default function ProjectPage() {
   const { projectId } = useParams();
@@ -31,10 +32,12 @@ export default function ProjectPage() {
   }
 
   return (
-    <div className="project__container">
-      <div className="project__body">
-        <h1 className="project__title">{projectQuery.data.name}</h1>
-        <p className="project__description">{projectQuery.data.description}</p>
+    <div className={styles.projectContainer}>
+      <div className={styles.projectBody}>
+        <h1 className={styles.projectTitle}>{projectQuery.data.name}</h1>
+        <p className={styles.projectDescription}>
+          {`Project description: ${projectQuery.data.description}`}
+        </p>
         <Kanban tasks={tasksQuery.data} />
       </div>
     </div>
