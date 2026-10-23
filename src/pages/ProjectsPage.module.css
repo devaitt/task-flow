@@ -1,0 +1,21 @@
+.projectsTitle {
+  font-family: "Vollkorn";
+  padding: 10px 20px;
+  font-size: 25px;
+}
+
+.projectsList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.fetchingHint,
+.loadingMsg,
+.errorMsg {
+  font-family: "Vollkorn";
+  font-size: 20px;
+  text-transform: capitalize;
+  padding: 10px 20px;
+}
