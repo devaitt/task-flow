@@ -1,0 +1,10 @@
+.kanbanColumnContainer {
+  border: 1px solid #000;
+  padding: 15px 15px;
+}
+
+.kanbanTitle {
+  font-family: "Vollkorn";
+  font-size: 20px;
+  font-weight: 600;
+}

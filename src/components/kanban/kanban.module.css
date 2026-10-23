@@ -1,0 +1,8 @@
+.kanbanList {
+  display: flex;
+  justify-content: space-between;
+}
+
+.kanbanContainer {
+  padding: 20px 10px;
+}
