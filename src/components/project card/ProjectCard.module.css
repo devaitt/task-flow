@@ -1,5 +1,5 @@
-.card__container {
-  min-width: 500px;
+.cardСontainer {
+  min-width: 400px;
 }
 
 .card {
@@ -9,13 +9,18 @@
   font-family: "Vollkorn";
 }
 
-.card__name {
+.cardName {
   font-size: 20px;
   font-weight: 700;
   text-transform: capitalize;
 }
 
-.card__description {
+.cardDescription {
   font-size: 18px;
   color: #4a4a4a;
+}
+
+.cardCreateDate {
+  font-weight: 600;
+  font-size: 14px;
 }

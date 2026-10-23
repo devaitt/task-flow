@@ -1,18 +1,18 @@
 import { type Project } from "../../types";
 import { Link } from "react-router-dom";
-import "./ProjectCard.css";
+import styles from "./ProjectCard.module.css";
 interface ProjectCardProps {
   project: Project;
 }
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <Link to={`/projects/${project.id}`}>
-      <div className="project__container">
-        <div className="card">
-          <div className="card__name">{project.name}</div>
-          <div className="card__description">{project.description}</div>
-          <div className="card__create-date">
-            {`Создан: ${project.createdAt}`}
+      <div className={styles.cardСontainer}>
+        <div className={styles.card}>
+          <div className={styles.cardName}>{project.name}</div>
+          <div className={styles.cardDescription}>{project.description}</div>
+          <div className={styles.cardCreateDate}>
+            {`Created at: ${project.createdAt}`}
           </div>
         </div>
       </div>
